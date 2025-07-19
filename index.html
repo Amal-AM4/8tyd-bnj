@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital | Profile</title>
+
+  <link rel="stylesheet" href="style/font-aws.css" />
+  <script src="js/font-aws.js" defer></script>
+  <link rel="stylesheet" href="style/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <p class="header-title">Digital.</p>
+    <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider"></span>
+    </label>
+  </header>
+
+  <main>
+    <section class="profile glass">
+      <div class="profile-img">
+        <img src="images/32b.jpg" alt="Profile Picture" />
+      </div>
+      <div class="profile-info">
+        <h2>Askar Hussain</h2>
+        <p class="title">Founder - NYX G-STORE</p>
+        <!-- <p>Nilakkamukku, Kadakkavoor</p> -->
+        <!-- <div class="bidgets">
+          <div class="skill-pill">Teacher</div>
+          <div class="skill-pill">Developer</div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="save glass">
+      <a href="#"><button class="btn save-btn">Save Contact</button></a>
+      <a href="Brochure.pdf" download="Store-Brochure.pdf"><button class="btn download"><i class="fa-solid fa-download"></i></button></a>
+    </section>
+
+    <section class="connect glass" id="connect-section">
+      <!-- Injected from JS -->
+    </section>
+
+    <section class="extras">
+      <div class="left-glass glass">
+        <button class="btn" id="shareBtn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+      </div>
+      <div class="qr-wrapper">
+        <canvas id="qrCanvas"></canvas>
+    </div>
+
+    </section>
+  </main>
+
+  <footer class="glass">
+    <p>&copy; 2025 Amal A M. All Rights Reserved.</p>
+    <!-- <button id="modeToggle">Toggle Dark/Light</button> -->
+  </footer>
+
+</body>
+</html>

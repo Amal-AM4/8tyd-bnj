@@ -1,0 +1,263 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Themes */
+[data-theme="dark"] body {
+  background: #111;
+  color: #fafafa;
+}
+
+[data-theme="light"] body {
+  background: #f5f5f5;
+  color: #111;
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  padding: 24px 0;
+  text-align: center;
+  border-bottom: 1px solid #cccccc49;
+}
+
+.header-title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 80%;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-info {
+  max-width: 300px;
+  text-align: center;
+}
+
+.profile-info .title {
+  font-style: italic;
+  font-size: 90%;
+}
+
+.profile-info p:nth-of-type(2) {
+  color: #a0a0a0;
+  padding: 10px 0;
+}
+
+.bidgets {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.skill-pill {
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #9994;
+}
+
+/* Save Section */
+.save {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.save a {
+    display: inline-block;
+    flex: 1;
+}
+
+/* .save-btn {
+  flex: 1;
+  width: 100%;
+}
+
+.download {
+  flex: 0 0 20%;
+} */
+
+.btn {
+  background: #9994;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: inherit;
+  width: 100%;
+}
+
+/* Connect Section */
+.connect {
+  padding: 22px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.list:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Extras (QR and Share) */
+.extras {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.left-glass, .right-glass {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+canvas {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 80%;
+  margin-top: 40px;
+}
+
+
+#modeToggle {
+  background: linear-gradient(135deg, #9994, #6663);
+  color: inherit;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#modeToggle:hover {
+  background: linear-gradient(135deg, #aaa6, #7775);
+  transform: scale(1.05);
+}
+
+.qr-wrapper {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.qr-wrapper canvas {
+  border-radius: 12px;
+  background: white;
+  padding: 10px;
+}
+
+
+/* Toggle Switch */
+.switch {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
