@@ -55,7 +55,7 @@ const qr = new QRious({
 // Contact list with hyperlinks
 const contacts = [
     { type: '', icon: 'fa-solid fa-globe', data: 'nyx-g.store', href: 'https://www.nyx-g.store/' },
-    { type: 'Email', icon: 'fa-envelope', data: 'example@gmail.com', href: 'mailto:nyxgstoreofficial@gmail.com' },
+    { type: 'Email', icon: 'fa-envelope', data: '', href: 'mailto:nyxgstoreofficial@gmail.com' },
     { type: 'Whatsapp', icon: 'fa-brands fa-whatsapp', data: 'Nyx-G Store', href: 'https://wa.me/+919947234413' },
     { type: 'Instagram', icon: 'fa-brands fa-instagram', data: '@nyx_techno', href: 'https://www.instagram.com/nyx_techno' },
     { type: 'LinkedIn', icon: 'fa-brands fa-linkedin', data: 'Askar Hussain', href: 'https://www.linkedin.com/in/askar-hussain-44316b31b/' },
