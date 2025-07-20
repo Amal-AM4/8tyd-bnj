@@ -261,3 +261,33 @@ input:checked + .slider:before {
   transform: translateX(22px);
 }
 
+.qr-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.qr-overlay {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.qr-link:hover .qr-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
